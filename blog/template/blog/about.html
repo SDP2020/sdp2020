@@ -1,0 +1,14 @@
+{% extends "blog/base.html" %}
+{% block content %}
+	{% for post in posts% }
+	<article class="media conrent-section">
+		<div class="meddia-body">
+			<a class="mr-2" href="#">
+				{{ post.course_code }}
+			</a>
+			<small class="text-muted">{{post.course_name}}</small>
+		</div>
+	</article>
+<a mat-raised-button color="accent" target="0" href="https://wits.ac.za/">Wits Home</a>
+{% endblock%}
+
