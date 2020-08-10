@@ -1,0 +1,21 @@
+language: python
+
+python:
+  - "3.8"
+  - "3.7"
+  - "3.6"
+    
+env:
+  - SECRET_KEY="TEST"
+
+services:
+  - mysql
+
+install:
+  - pipenv
+
+script:
+  - python manage.py test
+  
+
+    
