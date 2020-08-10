@@ -12,7 +12,8 @@ services:
   - mysql
 
 install:
-  - pip install -q Django==$DJANGO 
+  - pip install -q Django==$DJANGO
+  - pip install django-crispy-forms
 
 
 script:
