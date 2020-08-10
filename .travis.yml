@@ -12,7 +12,7 @@ services:
   - mysql
 
 install:
-  - pip install -q Django==$DJANGO --use-mirrors
+  - pip install -q Django==$DJANGO 
 
 
 script:
