@@ -23,4 +23,5 @@
 
       - python manage.py test
       - coverage run --source=home manage.py test users
-    after_success: coveralls
+    after_success: 
+    - coveralls
