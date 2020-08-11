@@ -22,5 +22,5 @@
     script: # => 7
 
       - python manage.py test
-      - coverage run --source=home manage.py test blog
+      - coverage run --source=home manage.py test
     after_success: coveralls
