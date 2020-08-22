@@ -34,7 +34,7 @@
 			  <a class="nav-item nav-link" href="{% url 'blog-about' %}">All courses</a>
 				{% endif %}
 				{% if user.is_authenticated %}
-			  <a class="nav-item nav-link" href="{% url 'blog-about' %}">My courses</a>
+			  <a class="nav-item nav-link" href="{% url 'mycourses' %}">My courses</a>
 			    {% endif %}
 			</div>
 			<!-- Navbar Right Side -->
