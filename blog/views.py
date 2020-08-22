@@ -16,6 +16,6 @@ def about(request):
 
 def mycourses(request):
     context={
-        'posts': Post.objects.first()
+        'posts': Post.objects.all()
     }
     return render(request, 'blog/mycourses.html', context)
