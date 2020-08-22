@@ -1,23 +1,21 @@
 from django.shortcuts import render
+from .models import Post
 #from django.http import HttpResponse #HttpResponse libraries
 
 # Create your views here.
-posts =[
-    {
-            'author': 'nasty C',
-            'title' :   'hell naw',
-            'content': 'never give up',
-            'date-released' : '2017'
-    },
-    {
-            'author': 'AKA',
-            'title' :   'Run jozi',
-            'content': 'the best',
-            'date-released': '2013'
-    }
-]
+ # The student number of the user
+
 def home(request):
     return render(request,'blog/home.html') #these files are out of the directories of the prohects
 
 def about(request):
-    return render(request,'blog/about.html',{'title':'About'})#these files are out of the directories of the prohects
+    context={
+        'posts': Post.objects.all()
+    }
+    return render(request,'blog/about.html', context)#these files are out of the directories of the prohects
+
+def mycourses(request):
+    context={
+        'posts': Post.objects.first()
+    }
+    return render(request, 'blog/mycourses.html', context)

@@ -1,7 +1,7 @@
 {% extends "blog/base.html" %}
 {% block content %}
 {% if user.is_authenticated %}
-	{% for post in posts %}
+   <!-- {% for post in posts %}-->
 	<article class="media conrent-section">
 		<div class="meddia-body">
 			<a class="mr-2" href="#">
@@ -10,8 +10,9 @@
 			<small class="text-muted">{{post.course_name}}</small>
 		</div>
 	</article>
-		
-	{% endfor %}
+		<a></a>
+  <!--  {% endfor %} -->
+    <div>This is all my courses</div>
 	{% endif %}
 	<!--<a mat-raised-button color="accent" target="0" href="https://wits.ac.za/">Wits Home</a> -->
 {% endblock %}
