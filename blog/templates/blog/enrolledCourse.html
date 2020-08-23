@@ -1,0 +1,25 @@
+{% load static %}
+
+<p> Hello World </p>
+<script type="text/javascript" src="{% static 'js/jquery.js' %}"></script>
+<script>
+    var student_number = 171; // Dummy user
+    console.log(student_number);
+    try {
+        $(document).ready(function () {
+            $.ajax({
+                url: 'enrolledcourses/ajax/getcourses/',
+                data: {
+                    'student_number': String(student_number),
+                },
+                dataType: "json",
+                success: function( courses){
+                    console.log(courses)
+                }
+            });
+        });
+    }
+    catch (TypeError) {
+        console.log("ran into an error");
+    }
+</script>

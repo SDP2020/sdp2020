@@ -29,7 +29,7 @@ class Course(models.Model):
 class Student(models.Model):
     user = models.OneToOneField(User, on_delete=models.CASCADE)
     name = models.CharField(max_length=256)
-    student_number = models.IntegerField(max_length=8, primary_key=True);
+    student_number = models.IntegerField(max_length=8, primary_key=True)
     courses = models.ManyToManyField(Course)
     password = models.CharField(max_length=256, default="password") # TODO this is just for testing purposes
 
