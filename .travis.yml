@@ -24,4 +24,4 @@
       - python manage.py test
       - coverage run --source=home manage.py test users
     after_success: 
-    - coveralls
+    - coveralls --exclude-pattern=*.txt *.html *.js *.css *.sqlite3
