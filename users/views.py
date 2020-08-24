@@ -18,6 +18,6 @@ def register(request):
 
 def mycourses(request):
     context={
-        'posts': Course.objects.all()
+        'posts': Student.objects.get(student_number="2020811").courses.all()
     }
     return render(request,'users/mycourses.html', context)
