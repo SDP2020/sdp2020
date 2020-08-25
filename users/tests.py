@@ -8,3 +8,5 @@ class CourseTestCase(TestCase):
     def testCourseExists(self):
         print("hello", Course.objects.all())
         self.assertEqual(Course.objects.get(name="TestCourse", course_code="TEST0000").get_course_name(), "TestCourse")
+    
+
