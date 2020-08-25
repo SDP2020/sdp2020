@@ -1,0 +1,4 @@
+"scripts": {
+  "test": "manage",
+  "coveralls": "manage --coverage && cat ./coverage/lcov.info | coveralls"
+}
