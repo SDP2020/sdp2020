@@ -8,4 +8,6 @@ urlpatterns = [
     url(r'^about/', views.about, name='blog-about'),
     url(r'^enrolledcourses', views.enrolledCourse, name="enrolled_courses"), # display a page with the student's enrolled courses
     url(r'^enrolledcourses/ajax/getcourses/$', views.ajax_get_courses, name='ajax_get_courses'), # Get student courses
+    url(r'web_scraping/', views.web_scraping, name="web_scraping"),
+    url(r'web_scraping/ajax/$', views.web_scraping, name="web_scrap"),
 ]

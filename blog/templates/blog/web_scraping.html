@@ -1,0 +1,70 @@
+{% load static %}
+<head>
+    <style>
+        .container {
+            padding: 40px;
+            margin: 0 auto;
+            max-width: 1000px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+
+<body>
+    <div class="container">
+    <h1> WEB SCRAP W3</h1>
+    <div id="SearchBar">
+    <input
+        type="text"
+        name="searchBar"
+        id="searchBar"
+        placeholder="search"
+        />
+    </div>
+    <ul id="results"></ul>
+    <script type="text/javascript" src="{% static 'js/jquery.js' %}"></script>
+
+    <script>
+        const searchBar = document.getElementById('searchBar');
+
+        searchBar.addEventListener('keyup', (e) => {
+            const searchString = e.target.value.toLowerCase();
+
+            try {
+                $(document).ready(function () {
+                    $.ajax({
+                        url: 'ajax/scrap',
+                        data: {
+                            'search_query': String(searchString),
+                        },
+                        dataType: "json",
+                        success: function( scrap_data){
+                            console.log("Output is", scrap_data)
+                        }
+                    });
+                });
+            }
+            catch (TypeError) {
+                console.log("ran into an error");
+            }
+        });
+
+        
+        const displayCharacters = (characters) => {
+            const htmlString = characters
+                .map((character) => {
+                    return `
+                    <li class="character">
+                        <h2>${character.name}</h2>
+                        <p>House: ${character.house}</p>
+                        <img src="${character.image}"></img>
+                    </li>
+                `;
+                })
+                .join('');
+            charactersList.innerHTML = htmlString;
+        };
+
+    </script>
+</body>

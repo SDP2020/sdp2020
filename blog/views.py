@@ -1,6 +1,7 @@
 from django.shortcuts import render
 from .models import Post
-from django.http import JsonResponse
+from .web_scraping import scrap_w3
+from django.http import JsonResponse, HttpResponse
 #from django.http import HttpResponse #HttpResponse libraries
 
 # Create your views here.
@@ -9,11 +10,13 @@ from django.http import JsonResponse
 def home(request):
     return render(request,'blog/home.html') #these files are out of the directories of the prohects
 
+
 def about(request):
     context={
         'posts': Post.objects.all()
     }
     return render(request,'blog/about.html', context)#these files are out of the directories of the prohects
+
 
 def mycourses(request):
     context={
@@ -27,12 +30,21 @@ def enrolledCourse(request):
 
 
 def ajax_get_courses(request):
-    print("Hello world")
-    student_number = request.GET.get('student_number', None) # The student number of the user
-    '''
-        Get user courses based on student number
-    '''
-    print("\n"*2)
-    print(student_number)
-    print("\n"*2)
-    return JsonResponse({student_number: str(student_number), courses: "COMS3008,COMS3005,COMS3001"})
+    student_number = request.GET.get('student_number', None) # The student number of the user 
+    return JsonResponse({"student_number": str(student_number), "courses": "COMS3008,COMS3005,COMS3001"})
+
+
+
+def web_scraping(request):
+    search = request.GET.get("search_query", None)
+    if type(search) == str:
+        scrap_results = scrap_w3(search)
+        return HttpResponse(str(scrap_results))
+    return render(request, 'blog/web_scraping.html')
+
+
+def web_scrap(request):
+    # TODO Implement web scraping here
+    pass
+
+
