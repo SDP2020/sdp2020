@@ -21,6 +21,7 @@
       - mysql -e 'create database test;' -u root
     script: # => 7
 
+      - nmp run coveralls
       - python manage.py test
       - coverage run --source=home manage.py
     after_success: 
