@@ -22,7 +22,7 @@
     script: # => 7
 
       - python manage.py test
-      - coverage run --source=home manage.py
+      - coverage run manage.py
     after_success: 
   
     - coveralls --exclude-pattern=*.txt *.html *.js *.css *.sqlite3
