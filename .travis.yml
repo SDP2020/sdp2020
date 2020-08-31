@@ -20,9 +20,8 @@
 
       - mysql -e 'create database test;' -u root
     script: # => 7
-
+ 
       - python manage.py test
-      - coverage run manage.py
+      - coverage --source=. run manage.py
     after_success: 
-     - codecov
-  #  - coveralls --exclude-pattern=*.txt *.html *.js *.css *.sqlite3
+     - coveralls --exclude-pattern=*.txt *.html *.js *.css *.sqlite3
