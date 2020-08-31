@@ -22,6 +22,6 @@
     script: # => 7
  
       - python manage.py test
-      - coverage --source=. run manage.py
+      - coverage --source=. run manage.py test
     after_success: 
      - coveralls --exclude-pattern=*.txt *.html *.js *.css *.sqlite3
