@@ -38,8 +38,9 @@ def ajax_get_courses(request):
 def web_scraping(request):
     search = request.GET.get("search_query", None)
     if type(search) == str:
+        print(search)
         scrap_results = scrap_w3(search)
-        return HttpResponse(str(scrap_results))
+        return JsonResponse({"Name": "Tyler", "Surname": "May"})
     return render(request, 'blog/web_scraping.html')
 
 
