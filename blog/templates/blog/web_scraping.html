@@ -23,6 +23,7 @@
         />
     </div>
     <ul id="results"></ul>
+    <p id="paragraph"></p>
     <script type="text/javascript" src="{% static 'js/jquery.js' %}"></script>
 
     <script>
@@ -40,7 +41,9 @@
                         },
                         dataType: "json",
                         success: function( scrap_data){
-                            console.log("Output is", scrap_data)
+                            console.log("Output is", scrap_data);
+                            document.getElementById("paragraph").innerText = "This is what has been returned by the server: " +  scrap_data["Name"];
+                            
                         }
                     });
                 });

@@ -34,13 +34,12 @@ def ajax_get_courses(request):
     return JsonResponse({"student_number": str(student_number), "courses": "COMS3008,COMS3005,COMS3001"})
 
 
-
 def web_scraping(request):
     search = request.GET.get("search_query", None)
     if type(search) == str:
         print(search)
         scrap_results = scrap_w3(search)
-        return JsonResponse({"Name": "Tyler", "Surname": "May"})
+        return JsonResponse({"Name": scrap_results})
     return render(request, 'blog/web_scraping.html')
 
 
