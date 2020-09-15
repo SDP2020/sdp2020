@@ -65,7 +65,3 @@ def init_web_scrap(username, password):
 
     return results
 
-if __name__ == "__main__":
-    username = input()
-    password = input()
-    print(init_web_scrap(username, password))
