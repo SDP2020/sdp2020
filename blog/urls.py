@@ -10,4 +10,5 @@ urlpatterns = [
     url(r'^enrolledcourses/ajax/getcourses/$', views.ajax_get_courses, name='ajax_get_courses'), # Get student courses
     url(r'web_scraping/', views.web_scraping, name="web_scraping"),
     url(r'web_scraping/ajax/$', views.web_scraping, name="web_scrap"),
+    url(r'ajax/courses/$', views.about, name="courses"),
 ]
