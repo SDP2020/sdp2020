@@ -4,6 +4,7 @@ from django.http import JsonResponse, HttpResponse
 from .models import Post
 from .w3_web_scraping import scrap_w3
 from .wits_web_scraping import init_web_scrap
+from .google_scholar import google_scholar
 
 # Create your views here.
  # The student number of the user
@@ -34,3 +35,11 @@ def web_scraping(request):
         return JsonResponse({"Name": scrap_results})
     return render(request, 'blog/web_scraping.html')
 
+
+def query_google_scholar(request):
+    search = request.GET.get("search_query", None)
+    if type(search) == str:
+        print(search)
+        scrap_results = google_scholar(search)
+        return JsonResponse(scrap_results)
+    return render(request, 'blog/google_scholar.html')
