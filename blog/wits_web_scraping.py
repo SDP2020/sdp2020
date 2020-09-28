@@ -130,5 +130,6 @@ def init_web_scrap(username, password):
 
     for course in course_list:
         results[str(course.name)] = str(course.content) # map course name to course contents
-
+    
+    return results
 
