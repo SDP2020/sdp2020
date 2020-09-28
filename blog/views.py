@@ -2,8 +2,8 @@ from django.shortcuts import render
 from django.http import JsonResponse, HttpResponse
 
 from .models import Post
-from .web_scraping import scrap_w3
-from .moodle_web_scraping import init_web_scrap
+from .w3_web_scraping import scrap_w3
+from .wits_web_scraping import init_web_scrap
 
 # Create your views here.
  # The student number of the user
