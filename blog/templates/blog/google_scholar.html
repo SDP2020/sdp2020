@@ -1,18 +1,13 @@
+{% extends "blog/base.html" %}
 {% load static %}
-<head>
-    <style>
-        .container {
-            padding: 40px;
-            margin: 0 auto;
-            max-width: 1000px;
-            text-align: center;
-        }
-    </style>
-</head>
+
+<style>
+    
+</style>
 
 
-<body>
-    <div class="container">
+
+{% block content %}
     <h1> SEARCH GOOGLE SCHOLAR</h1>
     <P>USE "ENTER" TO SEND QUERY TO SERVER</P>
     <div id="SearchBar">
@@ -29,7 +24,7 @@
 
     <script>
         const searchBar = document.getElementById('searchBar');
-
+)
         searchBar.addEventListener('keypress', (e) => {
             const searchString = e.target.value.toLowerCase();
             if (e.key === "Enter"){
@@ -42,9 +37,11 @@
                             },
                             dataType: "json",
                             success: function( results){
-                                console.log(results)
                                 for (var result in results){
-								    document.writeln(result, "\n\t", results[result]);
+                                    console.log(result)
+                                    var result_div = document.createElement("fdghgf");
+                                    result_div.innerHTML = String(result, "\n\t", results[result]);
+                                    document.body.appendChild(result_div);
 							    }
                                 
                             }
@@ -58,4 +55,4 @@
         });
 
     </script>
-</body>
+{% endblock %}

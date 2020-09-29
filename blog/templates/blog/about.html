@@ -1,10 +1,105 @@
 {% extends "blog/base.html" %}
-{% load static %} 
+{% load static %}
+<style>
+	body {font-family: Arial, Helvetica, sans-serif;}
+
+	/* The Modal (background) */
+	.modal {
+	display: none; /* Hidden by default */
+	position: fixed; /* Stay in place */
+	z-index: 1; /* Sit on top */
+	padding-top: 100px; /* Location of the box */
+	left: 0;
+	bottom: 0;
+	width: 100%; /* Full width */
+	height: 100%; /* Full height */
+	overflow: auto; /* Enable scroll if needed */
+	background-color: rgb(0,0,0); /* Fallback color */
+	background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+	}
+
+	/* Modal Content */
+	.modal-content {
+	position: relative;
+	background-color: #fefefe;
+	margin: auto;
+	padding: 0;
+	border: 1px solid #888;
+	width: 80%;
+	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+	-webkit-animation-name: animatetop;
+	-webkit-animation-duration: 0.4s;
+	animation-name: animatetop;
+	animation-duration: 0.4s
+	}
+
+	/* Add Animation */
+	@-webkit-keyframes animatetop {
+	from {top:-300px; opacity:0} 
+	to {top:0; opacity:1}
+	}
+
+	@keyframes animatetop {
+	from {top:-300px; opacity:0}
+	to {top:0; opacity:1}
+	}
+
+	/* The Close Button */
+	.close {
+	color: white;
+	float: right;
+	font-size: 28px;
+	font-weight: bold;
+	}
+
+	.close:hover,
+	.close:focus {
+	color: #000;
+	text-decoration: none;
+	cursor: pointer;
+	}
+
+	.modal-header {
+	padding: 2px 16px;
+	background-color: #5cb85c;
+	color: white;
+	}
+
+	.modal-body {padding: 2px 16px;}
+
+	.modal-footer {
+	padding: 2px 16px;
+	background-color: #5cb85c;
+	color: white;
+	}
+</style>
+
+
+
 {% block content %}
 	{% if user.is_authenticated %}
-		<p id="paragraph">Please wait while we fetch your courses</p>
-		<script type="text/javascript" src="{% static 'js/jquery-3.5.1.min.js' %}"></script>
+		<link rel="stylesheet" href="{% static 'jqtree.css'%}">
+		<script type="text/javascript" src="{% static 'js/tree.jquery.js' %}"></script>
 
+		<p id="paragraph">Please wait while we fetch your courses</p>
+		<div id="tree1"></div>
+		<div id="myModal" class="modal">
+
+			<!-- Modal content -->
+			<div class="modal-content">
+			  <div class="modal-header">
+				<span class="close">&times;</span>
+				<h2 id="modal_heading"></h2>
+			  </div>
+			  <div class="modal-body" id="modal_body_div">
+				  <p id="modal_body_text"> Your course resources will be displayed here</p>
+			  </div>
+			  <div class="modal-footer">
+				<h3 id="modal_footer"></h3>
+			  </div>
+			</div>
+		  
+		  </div>
 		<script>
 			var username = prompt("Please enter your username:");
 			var password = prompt("Please enter your password:");
@@ -18,11 +113,75 @@
                         },
                         dataType: "json",
                         success: function(courses){
-
+							var $tree = $('#tree1');
+							var data = []
 							for (var course in courses){
-								document.writeln(course, "\n\t", courses[course]);
+								console.log(course)
+								console.log(typeof(course))
+								data.push({
+									name: course,
+									children: [
+										{name:"lecturer: n/a"},
+										{name:"textbook: n/a"},
+										{name:"resources",
+										children: courses[course]}
+									]
+								})
+								// var data = [
+								// 	{
+								// 		name: 'node1',
+								// 		children: [
+								// 			{ name: 'child1' },
+								// 			{ name: 'child2' }
+								// 		]
+								// 	},
+								// 	{
+								// 		name: 'node2',
+								// 		children: [
+								// 			{ name: 'child3' }
+								// 		]
+								// 	}
+								// ];
 							}
-							
+							$(function() {
+								$tree.tree({
+										data: data
+									});
+								});
+								$tree.on( 'tree.click', function(e){
+									e.preventDefault();
+									var selected_node = e.node;
+									console.log(String(selected_node.name))
+									if (String(selected_node.name) === "resources"){
+										console.log("goodness grace we finally found you");
+										// Get the modal
+										var modal = document.getElementById("myModal");
+
+										// Get the <span> element that closes the modal
+										var span = document.getElementsByClassName("close")[0];
+
+										// When the user clicks the button, open the modal 
+										var heading_text = document.getElementById("modal_heading");
+										heading_text.innerText = selected_node.parent.name;
+										
+										// var modal_body =- document.getElementById("modal_body_text")
+										// modal_body.innerHTML = "Hello world"
+										modal.style.display = "block";
+										
+										// When the user clicks on <span> (x), close the modal
+										span.onclick = function() {
+										modal.style.display = "none";
+										}
+
+										// When the user clicks anywhere outside of the modal, close it
+										window.onclick = function(event) {
+										if (event.target == modal) {
+											modal.style.display = "none";
+										}
+										}
+                                    } 
+								})
+
                         }
                     });
                 });
