@@ -59,7 +59,7 @@ We'll still need to do backend logic.
 2020/07/17, 11:10 - +27 71 417 4762: When we get to the meeting can you please be the one to explain because we still don't phantom the concept to the core.
 2020/07/17, 11:10 - +27 71 417 4762: We will get as we go on
 2020/07/17, 11:10 - V: 👌🏽
-2020/07/17, 11:23 - +27 71 417 4762: Found out we can record the meeting if we are using a browser not on the app
+2020/07/17, 11:22 - +27 71 417 4762: Found out we can record the meeting if we are using a browser not on the app
 2020/07/17, 11:23 - +27 71 417 4762: So I'll ask him to record it
 2020/07/17, 11:39 - V: The meeting has started
 2020/07/17, 11:45 - +27 71 417 4762: <Media omitted>
@@ -144,7 +144,7 @@ Allocating tasks in this manner might help streamline what each individual has t
 
 Also just as a general FYI for everyone, if you're learning something or trying to do something, and you run into problems, as well using online resources, you can also ask on the group, you might find that someone here has come across a similar problem, or might know how to solve it.
 2020/07/20, 18:35 - +27 71 417 4762: 👌🏾👌🏾
-2020/07/21, 10:42 - +27 71 417 4762: <Media omitted>
+2020/07/21, 10:41 - +27 71 417 4762: <Media omitted>
 2020/07/21, 10:42 - +27 71 417 4762: We should get started
 2020/07/21, 10:43 - +27 71 417 4762: We can have daily scrum where everyone just come and say what they were doing even if you didn't do anything you just come and say nothing
 2020/07/21, 10:44 - +27 71 417 4762: We can just keep on updating each other on what we are doing even saying I did nothing it's fine we just have to do it daily
@@ -272,7 +272,7 @@ As opposed to a video recording or several video recordings.
 2020/07/24, 14:11 - +27 71 417 4762: Yeah I think we should have them every week and discuss where we are and what we are struggling with
 2020/07/24, 14:13 - +27 71 417 4762: We should also continue with the daily scrum
 2020/07/24, 14:14 - +27 62 193 1440: The daily scrum is for sure a WhatsApp thing
-2020/07/24, 20:22 - +27 71 417 4762: Daily scrum
+2020/07/24, 20:21 - +27 71 417 4762: Daily scrum
 2020/07/24, 20:22 - +27 71 417 4762: I'm learning Django with python
 2020/07/24, 20:25 - V: @27631149177 I sent you an invite for both GitHub and Taiga
 2020/07/24, 20:25 - +27 62 193 1440: I did not do much related to the project
@@ -323,7 +323,7 @@ What's more important is agreeing a time to have our initial meeting, so that we
 2020/07/27, 09:13 - V: I'll take this as the first suggested time.
 
 Hopefully we can get more feedback on this before the end of the day
-2020/07/27, 09:15 - V: Creating a meeting is relatively simple.
+2020/07/27, 09:14 - V: Creating a meeting is relatively simple.
 2020/07/27, 09:15 - V: There's also a web interface.
 2020/07/27, 09:15 - V: Alright, thank you, I'll add you.
 2020/07/27, 09:18 - +27 63 114 9177: How about 8am to 8:30 am daily we have GoogleMeet videos, someone takes meeting minutes, someone invites everyone, someone sets the agenda, someone keeps time of meeting progress... I will take meeting minutes
@@ -561,7 +561,7 @@ If you go "git --help" you can see more and explanations.
 2020/08/17, 22:37 - V: Greetings.
 
 A meeting has been arranged with Rylan for tomorrow at 1, to plan for sprint 2, I expect that everyone will be able to attend.
-2020/08/17, 23:07 - V: https://meet.google.com/mvg-rhsa-vff
+2020/08/17, 23:06 - V: https://meet.google.com/mvg-rhsa-vff
 PIN: 209757266
 
 Details for the meeting.
@@ -624,7 +624,7 @@ However, linking means less work on the database side
 
 You can use "pip install django"
 2020/08/23, 03:24 - V: Greetings, just an update, I have written code that makes use of Ajax to retrieve the specific courses a user does, however, I haven't been able to get the URL to redirect properly, so that's what I need to fix.
-2020/08/23, 03:26 - V: Furthermore, I'm having troubles connecting to the server, so I'll email Shun to ask for help.
+2020/08/23, 03:25 - V: Furthermore, I'm having troubles connecting to the server, so I'll email Shun to ask for help.
 
 Tried both methods described in the SDP notes Rylan was referring to, as well as the VPN method
 2020/08/23, 08:40 - +27 71 417 4762: Did you finish with Java script
@@ -841,7 +841,7 @@ And literally so far I've just been fiddling with just a handful of lines of cod
 2020/09/06, 22:23 - +27 62 193 1440: 🔥🔥🔥🔥🔥
 2020/09/07, 02:39 - +27 71 417 4762: 🔥🔥🔥
 2020/09/07, 02:39 - +27 71 417 4762: This is dope
-2020/09/07, 19:54 - +27 71 417 4762: @27621931440 how is it going?
+2020/09/07, 19:53 - +27 71 417 4762: @27621931440 how is it going?
 2020/09/07, 20:29 - +27 71 417 4762: @27765762048 what was wrong with ajax?
 2020/09/07, 20:34 - V: For the initial web scraping? I'm not quite sure, I'll revisit it when I do the Ajax for this section of web scraping.
 2020/09/08, 00:16 - +27 62 193 1440: I tried it with jquery but i hit a wall, so I am going to try using vanilla js
@@ -878,12 +878,12 @@ The first input prompt is for student number, the second for password.
 2020/09/09, 22:21 - V: I was unable to check it yesterday, due to the login issue, I raised with you.
 
 And unfortunately, I've spent today working on CAM, as I'm falling behind, and we have an assessment next week, for methods.
-2020/09/09, 22:24 - +27 71 417 4762: Their urls are working but  I'm not sure if it returns the right info
+2020/09/09, 22:23 - +27 71 417 4762: Their urls are working but  I'm not sure if it returns the right info
 2020/09/09, 22:24 - V: Alright, I'll check it and get back to you.
 2020/09/09, 22:31 - +27 71 417 4762: It's fine, do we need it though
 2020/09/09, 22:31 - +27 71 417 4762: I don't  really think so
 2020/09/09, 22:32 - +27 71 417 4762: Are we not gonna get courses from module
-2020/09/09, 22:39 - V: AJAX is used for communication between the client and the server, so we need it to be able to send data and receive the data without the user having to refresh the page
+2020/09/09, 22:38 - V: AJAX is used for communication between the client and the server, so we need it to be able to send data and receive the data without the user having to refresh the page
 2020/09/09, 22:40 - V: There are probably other alternatives, but I'm most comfortable with AJAX, so that's what I prefer using, with that said I'll have a look at the earlier code too see why it isn't working and I'll get back to you.
 2020/09/10, 06:32 - +27 62 193 1440: Gents I haven't had power the last two days so I have done much but will work today.
 2020/09/10, 06:39 - V: Thanks for the update.
@@ -917,3 +917,160 @@ Nevertheless, the moodle script works quite well.
 2020/09/14, 08:02 - +27 71 417 4762: I only have WhatsApp data
 2020/09/14, 08:03 - V: Alright, thanks.
 2020/09/15, 08:43 - +27 71 417 4762: Guys I'm on my way home but almost there if you need anything just shout
+2020/09/15, 14:46 - V: Sprint retrospective meeting is on
+2020/09/15, 23:40 - +27 62 193 1440: Guys I have been experiencing power cuts here at home, and I apologize for not showing up today to the sprint retrospective because of the same reason.
+2020/09/15, 23:41 - V: It's alright, have you been able to work on anything in the meanwhile?
+2020/09/17, 16:43 - V: Greetings I would like to request a meeting with Rylan for tomorrow, what time works best for everyone?
+2020/09/17, 16:49 - +27 71 417 4762: This message was deleted
+2020/09/17, 16:49 - +27 71 417 4762: I would say 11
+2020/09/17, 16:51 - V: 👌🏽, I'll only email him at around 19:00, so if anyone has any other time suggestions, you can let me before that.
+2020/09/17, 16:55 - +27 71 417 4762: I have 2 hours test in the morning but I'll make it there
+2020/09/17, 17:15 - +27 63 114 9177: I say 12:30. What will it be about?
+2020/09/17, 17:50 - V: Sprint planning
+2020/09/17, 17:51 - V: @pfunzo how does 12:30 sound?
+And @27631149177 would you still be available at 11?
+2020/09/17, 17:54 - +27 71 417 4762: It's fine for me
+2020/09/17, 18:15 - +27 63 114 9177: Yes.
+2020/09/17, 20:46 - V: He can only do 13:30
+2020/09/17, 21:43 - +27 71 417 4762: Go ahead
+2020/09/18, 13:29 - V: Meeting URL: https://meet.google.com/jfs-nuhv-qaa
+Phone: +1 218-301-2674 PIN: 741 653 239#
+
+Sprint planning meeting
+2020/09/18, 14:04 - +27 63 114 9177: I added the meeting minutes here https://github.com/SDP2020/sdp2020/wiki/Srint(1;2;3;4)Planning quickly so we can make user stories to implement
+2020/09/18, 14:05 - +27 63 114 9177: Then we can add time management  functionality as a final functionality.
+2020/09/18, 14:30 - V: I'm still busy with a mechanics, I'll do this when I'm done.
+2020/09/19, 13:20 - V: I updated taiga
+2020/09/19, 13:42 - +27 63 114 9177: @27714174762 i am trying to draw sequence diagrams for the other functionality other than login, how does the Listing course functionality sequence look like?
+2020/09/19, 13:46 - V: @27631149177 don't forget to edit the diagram Rylan told you to edit.
+
+I think it was one of the last two diagrams.
+2020/09/23, 03:19 - V: Apologies for the silence, I've been busy with my other modules, our server issues have been rectified, I'll set it up today.
+2020/09/23, 09:19 - +27 63 114 9177: @27714174762 and @27765762048  on the front end, how will the user Get Textbooks, Check Kudu Bucks,Access the Libray and Input the hours spent on Course vs Recommended Hours?
+2020/09/23, 09:19 - +27 63 114 9177: What tasks must we add on the Taiga user stories?
+2020/09/23, 09:24 - +27 63 114 9177: I am trying to draw the Sequence and State Diagrams of these functionalities...like Rylan said.
+2020/09/23, 09:26 - +27 63 114 9177: But i don't understand how the frontend will work.
+2020/09/23, 10:15 - V: There'll be no library access, we are using Google scholar.
+
+There'll be a separate place called marketplace, where the user can get textbooks
+Kudu bucks will be displayed in the market place
+
+Haven't yet thought about the implementation of the hours.
+2020/09/23, 10:15 - V: We'll update tasks as we go on, for each user story.
+2020/09/23, 15:59 - +27 63 114 9177: the one above to help with the frontend design..
+2020/09/23, 16:01 - +27 63 114 9177: <Media omitted>
+2020/09/23, 16:14 - +27 63 114 9177: What do you guys think about having the Wireframe sketch diagram i attached to assist with the frontend?
+2020/09/23, 16:14 - +27 63 114 9177: This one was for YouTube.
+2020/09/23, 16:19 - V: I do think that the more documentation we have the better off we would be.
+2020/09/23, 16:22 - +27 63 114 9177: Its a hand drawn sketch of the Web pages to assist code the frontend. Its not documentation.
+2020/09/23, 16:24 - +27 63 114 9177: Since we are struggling with the frontend, we should have hand drawn sketches of the Web pages and how the link to each other.
+2020/09/23, 16:33 - V: Yeah, I know, I was using the word documentation in the context that the "sketches" are communicable material.
+2020/09/23, 16:34 - V: 👌🏽
+2020/09/24, 03:57 - V: I have the code running on the server, however I can't access it through the web, I think I need to first set up the wits vpn, so I'll try that and let you know.
+2020/09/24, 09:05 - +27 63 114 9177: I meant how the web pages link to each other.
+2020/09/24, 12:40 - +27 63 114 9177: Just added the updated diagrams on the wiki Pages.
+2020/09/24, 12:42 - +27 63 114 9177: When are having the Sprint review meeting with Rylan? Since the Retrospective is on the 29th, next Tuesday.
+2020/09/24, 12:44 - V: If you don't mind can you please set it up for Monday?
+2020/09/24, 13:25 - +27 63 114 9177: Do you think all will be done by then?
+2020/09/24, 13:27 - +27 63 114 9177: I'm worried about our code... especially the frontend.
+2020/09/24, 13:29 - +27 63 114 9177: I still have to complete the Class diagram and that requires the Completed code in order to have accurate Class names, attributes and Method() calls.
+2020/09/24, 13:31 - V: I honestly don't know I also haven't been able to do much work on the backend, I had a methods test on Monday, and I thought my optimal control theory assignment was due tomorrow.
+I'm not sure how long PC will take me, because we have a test this weekend as well.
+
+And I'm in Venda due to family matters, but I'll try get as much done as possible.
+
+I'll give you an update by Saturday on whether we'll be able to be done by then.
+2020/09/25, 19:23 - +27 63 114 9177: I will be working on the Sketches.
+2020/09/25, 19:53 - +27 71 417 4762: I'm all yours
+2020/09/25, 19:53 - +27 71 417 4762: I have more time in my hands than ever
+2020/09/25, 19:53 - +27 71 417 4762: Use me any how
+2020/09/25, 19:53 - +27 71 417 4762: We are in this together
+2020/09/25, 19:53 - +27 71 417 4762: I'll start tonight
+2020/09/26, 01:30 - V: Can you start working on the marketplace layout
+2020/09/26, 01:30 - V: I'm assuming the tree layout is done, if not that should be top priority.
+2020/09/26, 05:31 - +27 71 417 4762: I will show you today
+2020/09/26, 06:39 - V: Alright.
+2020/09/26, 09:40 - +27 63 114 9177: According to the Science Rules Book a short course requires 1200 hours of notional study that does not count for marks.
+2020/09/26, 10:03 - V: We will need to work out a fraction of that, because in most cases, they'll download a resource and then go through it offline
+2020/09/26, 10:07 - +27 63 114 9177: So if a course takes 10 weeks we can divide 1200 by 10  to get 120 hours. Thus the students can work out the minimum time to spend on thier courses and pace themselves per week to measure their progress.
+2020/09/26, 10:07 - +27 63 114 9177: So i was thinking we have a Wep page called "Weekly Notinal Study Hours " that is linked to the Home page.
+2020/09/26, 10:17 - +27 63 114 9177: So from the Home Page after clicking the "Weekly Notional Study Hours" this page appears, with a table where students can input the number of Hours they have of Notional Study for each week selected on the dropdown list in the Week column.
+2020/09/26, 10:19 - +27 63 114 9177: Then the Progress column will display a calculated percentage of input against the Recommended hours.
+2020/09/26, 10:19 - +27 63 114 9177: We can try other sketches and see how the frontend can be, what do you guys think about using theses to help desing the Web pages?
+2020/09/26, 10:19 - +27 63 114 9177: <Media omitted>
+2020/09/26, 10:19 - +27 63 114 9177: <Media omitted>
+2020/09/26, 10:20 - +27 63 114 9177: <Media omitted>
+2020/09/26, 12:07 - +27 71 417 4762: How long should do I wait until I get the courses
+2020/09/26, 12:09 - +27 71 417 4762: Oops I'm getting the code 500
+2020/09/26, 13:33 - +27 71 417 4762: With the tree
+2020/09/26, 13:33 - +27 71 417 4762: what should happen when resources is clicked
+2020/09/26, 13:34 - +27 71 417 4762: Can you send m a screenshot you get on  an about page
+2020/09/26, 14:48 - V: Still figuring out how to download the resource.
+
+At the moment, it just redirects you to moodle
+2020/09/26, 14:48 - +27 71 417 4762: Lecturer's name
+2020/09/26, 14:50 - +27 71 417 4762: Does it have to show the resources tha are there
+2020/09/26, 14:53 - V: Yes.
+2020/09/26, 19:03 - +27 71 417 4762: Can you send me how the market place is supose to look like
+2020/09/26, 19:03 - +27 71 417 4762: draw ir done and take and a picture
+2020/09/26, 19:04 - +27 71 417 4762: stop
+2020/09/26, 20:10 - V: Will do that in a few, unfortunately still busy
+2020/09/26, 22:04 - +27 71 417 4762: I'll start with that in the morning
+2020/09/26, 22:04 - +27 71 417 4762: Don't forget
+2020/09/27, 07:33 - V: <Media omitted>
+2020/09/27, 07:34 - V: <Media omitted>
+2020/09/27, 07:35 - V: <Media omitted>
+2020/09/27, 08:10 - +27 71 417 4762: Do we have to make our own books or we have to do the web scrapping
+2020/09/27, 08:11 - V: Web scrapping.
+2020/09/27, 09:38 - +27 71 417 4762: Are you still scrapping Google scholar
+2020/09/27, 09:47 - V: Yes I am
+2020/09/27, 10:58 - +27 71 417 4762: Does moodle scrapping works on your side
+2020/09/27, 11:21 - V: Yeah
+2020/09/27, 13:42 - +27 71 417 4762: when you do the web scraping do you also use the csv
+2020/09/27, 13:43 - +27 71 417 4762: I'm trying to understand how it works
+2020/09/27, 14:05 - V: CSV as in the format?
+2020/09/27, 14:26 - +27 63 114 9177: Can we still set a Sprint Review meeting on Monday?
+2020/09/27, 14:29 - +27 71 417 4762: Yes 😅
+2020/09/27, 14:56 - V: No, I don't use CSV
+2020/09/27, 14:56 - V: But I do return the data as a map/dictionary
+2020/09/27, 18:54 - +27 71 417 4762: @27765762048 aren't you writing PC
+2020/09/27, 18:55 - V: Yes, I am, I was also writing Methods on Monday😔
+2020/09/27, 19:09 - +27 71 417 4762: Are you serious? 🤦🏾‍♂️
+2020/09/27, 19:09 - +27 71 417 4762: 😭😭😭Wits is giving you the edge
+2020/09/27, 19:14 - V: Yep🤣
+2020/09/27, 19:14 - V: It really is.
+2020/09/27, 19:15 - V: If anyone needs me tonight, I won't be as available, I have to drive back home.
+2020/09/27, 19:37 - +27 71 417 4762: Drive safe
+2020/09/27, 19:59 - V: Thanks.
+2020/09/28, 04:42 - V: Greetings, I've completed the Sakai aspect of this sprint, at the moment it just fetches the entire resources table.
+
+Due to time constraints I was unable to fetch individual resources.
+2020/09/28, 04:48 - V: @27631149177 did you set up a meeting for today?
+2020/09/28, 04:49 - V: Sorry, I didn't see this text I had busy day yesterday, can I assume this means you didn't set up a meeting with Rylan?
+2020/09/28, 07:23 - V: Greetings.
+
+From my end the user stories that have been completed are the following
+Google scholar
+W3 Search
+Sakai
+2020/09/28, 07:24 - V: Still need to do the marketplace backend code.
+The Kudu bucks
+The recommended time*
+2020/09/28, 07:25 - V: Recommended time has a star, because I might not be able to implement it as, it requires the courses being Django models which they aren't at the moment, and I might not have time to change them.
+2020/09/28, 07:26 - +27 71 417 4762: Can you git the code?
+2020/09/28, 07:26 - V: It's already on git.
+2020/09/28, 07:57 - +27 71 417 4762: which files can we test to increase the coverall
+2020/09/28, 08:04 - V: We need to exclude all the files that contain web scraping components, that's how we get our coveralls score to increase
+2020/09/28, 08:27 - V: Not yet sure how this is done.
+2020/09/28, 08:37 - +27 63 114 9177: No I did not set up a meeting.
+2020/09/28, 09:52 - V: It's alright, I sent him an email, not sure if he will respond to it.
+2020/09/28, 10:05 - V: He agreed to have a meeting with us today at 14:45
+2020/09/28, 10:10 - V: I sent everyone an email with the details for the meeting.
+2020/09/28, 10:33 - +27 62 193 1440: Awe gents I know have not been active or even a bit vocal about the project or work I have done and this is due to family matters I have been battling with and has made me not be available to do work or participate. I apologize for not communicating earlier and if there is any work that needs to be done that is still outstanding I am available to work on it.
+2020/09/28, 11:16 - +27 62 193 1440: I won't be able to attend the meeting today as I am travelling.
+2020/09/28, 12:49 - V: Did you also email Rylan with this information?
+2020/09/28, 12:51 - V: It's alright
+2020/09/28, 12:55 - +27 62 193 1440: Yes I did
+2020/09/28, 12:57 - V: 👌🏽
+2020/09/28, 14:39 - +27 71 417 4762: Meeting in 5 minutes
+2020/09/28, 16:11 - V: @27631149177 can you git pull, login into our site, and then enter your student number and password when prompted, it's not working for Pfunzo, so I want to see if it'll work for you.
