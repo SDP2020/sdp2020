@@ -3,6 +3,8 @@ from .models import Post
 import unittest
 from django.test import Client
 from .urls import urlpatterns
+from django.urls import reverse
+import pytest
 
 class PostTestCase(TestCase):
     def setUp(self):
@@ -24,5 +26,8 @@ class SimpleTest(unittest.TestCase):
 
     def test_index(self):
         client = Client()
-        response = client.get('/customer/index/')
+        response = client.get('/google_scholar/ajax/?search_query=complex%20equations/')
         self.assertEqual(response.status_code, 404)
+
+
+    
