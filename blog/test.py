@@ -29,19 +29,3 @@ class SimpleTest(unittest.TestCase):
         response = client.get('/google_scholar/ajax/?search_query=complex%20equations/')
         self.assertEqual(response.status_code, 404)
 
-
-class GoogleScholar(TestCase):
-
-    def test_correct_results(self):
-        response = self.client.post('/google_scholar/')
-        self.assertEqual(response.status_code, 200)
-
-        self.assertJSONEqual(force_text(response.content), {'status': 'success'})
-
-class test_web_scraing(TestCase):
-
-    def test_correct_results(self):
-        response = self.client.post('/web_scrap/')
-        self.assertEqual(response.status_code, 200)
-
-        self.assertJSONEqual(force_text(response.content), {'status': 'success'})
