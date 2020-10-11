@@ -20,7 +20,7 @@ class Result:
 #             iterate throught the other version link and return that
         pass
 
-def google_scholar(query):
+def google_scholar(query="Complex Equations"):
     search_results = {}
     #Setting up session information
     URL = "https://scholar.google.com/scholar"

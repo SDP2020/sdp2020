@@ -28,7 +28,7 @@ def learn_w3(site, nav=False):
     # div "sidenav"
 
 
-def scrap_w3(argument, nav=False):
+def scrap_w3(argument="Python", nav=False):
     print("argument is %s" %(argument))
     site = "https://www.w3schools.com"
     w3 = requests.get(site) # get the html content of the site we will be visiting

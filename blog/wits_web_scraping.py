@@ -47,9 +47,11 @@ def moodle(username, password):
     soup = bs4(session.get("https://courses.ms.wits.ac.za/moodle/my/").text, "html.parser")
 
     # Find a list of all courses
-    courses = soup.find("li", {"class":"type_system depth_2 contains_branch"}).find_all("a")
-    courses = list(set(courses)) # Remove duplicate entries
-
+    try:
+        courses = soup.find("li", {"class":"type_system depth_2 contains_branch"}).find_all("a")
+        courses = list(set(courses)) # Remove duplicate entries
+    except AttributeError:
+        return {"Error": "Please confirm your login details and try again"}
     # Iterate through courses and get relevant information
     for course in courses:
         course_ = str(course).split(" ")
@@ -94,7 +96,12 @@ def sakai(username, password):
 
     # Filter out courses according to year
     courses = deque()
-    courses_soup = soup.find("div", {"id": "otherSitesCategorWrap", "class":"tab-box"}).find_all("a")
+    try:
+        courses_soup = soup.find("div", {"id": "otherSitesCategorWrap", "class":"tab-box"}).find_all("a")
+    
+    except AttributeError:
+        return {"Error": "Please confirm your login details and try again"}
+    
     for course in courses_soup:
         if "2020" in str(course) and "fullTitle" in str(course):
             courses.append(course)
@@ -129,7 +136,9 @@ def init_web_scrap(username, password):
     results = {} # map that keeps all the results returned by the server
 
     for course in course_list:
-        results[str(course.name)] = str(course.content) # map course name to course contents
-    
+        try:
+            results[str(course.name)] = str(course.content) # map course name to course contents
+        except AttributeError:
+            return {"Error": "Failed To Get Your Courses Please Refresh the page and double check your password \n alternatively please make sure your username is registered with wits"}
     return results
 

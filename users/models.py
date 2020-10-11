@@ -1,7 +1,9 @@
 from django.db import models
-from django.contrib.auth.forms import User
+from django.contrib.auth.models import User
 from django.db.models.signals import post_save
 from django.dispatch import receiver
+
+
 
 class Course(models.Model):
     name = models.CharField(max_length=256)
@@ -25,25 +27,32 @@ class Course(models.Model):
         return self.course_code
 
 
+# @receiver(post_save, sender=User)
+# def create_user_profile(sender, instance, created, **kwargs):
+#     if created:
+#         Student.objects.create(user=instance)
+
+#     def __str__(self):
+#         return '%s, %s' %(self.name, self.student_number)
     
+# @receiver(post_save, sender=User)
+# def save_user_profile(sender, instance, **kwargs):
+#     instance.student.save() # if you run into problem's try changing profile to student
+
 class Student(models.Model):
     user = models.OneToOneField(User, on_delete=models.CASCADE)
-    name = models.CharField(max_length=256)
-    student_number = models.IntegerField(max_length=8, primary_key=True)
+    bio = models.TextField(max_length=500, blank=True)
+    location = models.CharField(max_length=30, blank=True)
     courses = models.ManyToManyField(Course)
     password = models.CharField(max_length=256, default="password") # TODO this is just for testing purposes
+    student_number = models.IntegerField(max_length=8, primary_key=True)
 
-'''
-@receiver(post_save, sender=User)
-def create_user_profile(sender, instance, created, **kwargs):
-    if created:
-        Student.objects.create(user=instance)
+# @receiver(post_save, sender=User)
+# def create_user_profile(sender, instance, created, **kwargs):
+#     if created:
+#         Student.objects.create(user=instance)
 
-    def __str__(self):
-        return '%s, %s' %(self.name, self.student_number)
-    
-@receiver(post_save, sender=User)
-def save_user_profile(sender, instance, **kwargs):
-    instance.student.save() # if you run into problem's try changing profile to student
-    
-'''
+
+# @receiver(post_save, sender=User)
+# def save_user_profile(sender, instance, **kwargs):
+#     instance.sjtudent.save()

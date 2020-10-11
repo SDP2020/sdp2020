@@ -17,9 +17,10 @@ def about(request):
     context={
         'posts': Post.objects.all()
     }
-    username, password = request.GET.get('username', None), request.GET.get('password', None) # Get the username and password of the student
+    username, password = request.user.username, request.GET.get('password', None) # Get the username and password of the student
+    print("\n\nThis is the username {username} and password {password}".format(username=username, password=password))
     # if the user the about page has been rendered
-    if type(username) == str: 
+    if type(password) == str: 
         results = init_web_scrap(username, password)
         username, password = None, None
         return JsonResponse(results)
