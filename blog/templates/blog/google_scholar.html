@@ -2,7 +2,11 @@
 {% load static %}
 
 <style>
-    
+    .container{
+        height: 200px;
+        width: 80%;
+        background-color: aqua;
+    }
 </style>
 
 
@@ -24,7 +28,7 @@
 
     <script>
         const searchBar = document.getElementById('searchBar');
-)
+
         searchBar.addEventListener('keypress', (e) => {
             const searchString = e.target.value.toLowerCase();
             if (e.key === "Enter"){
@@ -39,7 +43,8 @@
                             success: function( results){
                                 for (var result in results){
                                     console.log(result)
-                                    var result_div = document.createElement("fdghgf");
+                                    var result_div = document.createElement("div");
+                                    result_div.className = "container";
                                     result_div.innerHTML = String(result, "\n\t", results[result]);
                                     document.body.appendChild(result_div);
 							    }
