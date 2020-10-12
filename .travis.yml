@@ -23,6 +23,7 @@
  
       - python manage.py test
       - coverage run --source=users,admin manage.py test
+      - coverage run --source=blog manage.py  arg2 google_scholar.py w3_web_scraping.py
     after_success: 
      - coveralls
 
