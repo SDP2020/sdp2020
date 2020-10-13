@@ -48,7 +48,8 @@ class test_google_scholar_results(TestCase):
         for res_ in res:
             if res_ not in google:
                 return False
-            return True
+            else:
+                return True
 
 class test_web_scraping_results(TestCase):
     def test_web_scraping_results(self):
@@ -63,4 +64,5 @@ class test_web_scraping_results(TestCase):
         for res_ in res:
             if res_ not in scrap_results:
                 return False
-            return True
+            else:
+                return True
