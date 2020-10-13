@@ -1,18 +1,9 @@
+{% extends "blog/base.html" %}
 {% load static %}
-<head>
-    <style>
-        .container {
-            padding: 40px;
-            margin: 0 auto;
-            max-width: 1000px;
-            text-align: center;
-        }
-    </style>
-</head>
 
 
-<body>
-    <div class="container">
+
+{% block content %}
     <h1> WEB SCRAP W3</h1>
     <P>USE "ENTER" TO SEND QUERY W3</P>
     <div id="SearchBar">
@@ -42,8 +33,7 @@
                             },
                             dataType: "json",
                             success: function( scrap_data){
-                                console.log("Output is", scrap_data);
-                                document.getElementById("paragraph").innerText = "This is what has been returned by the server: " +  scrap_data["Name"];
+                                document.getElementById("paragraph").innerText = scrap_data["Name"];
                                 
                             }
                         });
@@ -73,3 +63,4 @@
 
     </script>
 </body>
+{% endblock %}

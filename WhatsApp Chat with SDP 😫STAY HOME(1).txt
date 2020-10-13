@@ -323,7 +323,7 @@ What's more important is agreeing a time to have our initial meeting, so that we
 2020/07/27, 09:13 - V: I'll take this as the first suggested time.
 
 Hopefully we can get more feedback on this before the end of the day
-2020/07/27, 09:14 - V: Creating a meeting is relatively simple.
+2020/07/27, 09:15 - V: Creating a meeting is relatively simple.
 2020/07/27, 09:15 - V: There's also a web interface.
 2020/07/27, 09:15 - V: Alright, thank you, I'll add you.
 2020/07/27, 09:18 - +27 63 114 9177: How about 8am to 8:30 am daily we have GoogleMeet videos, someone takes meeting minutes, someone invites everyone, someone sets the agenda, someone keeps time of meeting progress... I will take meeting minutes
@@ -561,7 +561,7 @@ If you go "git --help" you can see more and explanations.
 2020/08/17, 22:37 - V: Greetings.
 
 A meeting has been arranged with Rylan for tomorrow at 1, to plan for sprint 2, I expect that everyone will be able to attend.
-2020/08/17, 23:06 - V: https://meet.google.com/mvg-rhsa-vff
+2020/08/17, 23:07 - V: https://meet.google.com/mvg-rhsa-vff
 PIN: 209757266
 
 Details for the meeting.
@@ -624,7 +624,7 @@ However, linking means less work on the database side
 
 You can use "pip install django"
 2020/08/23, 03:24 - V: Greetings, just an update, I have written code that makes use of Ajax to retrieve the specific courses a user does, however, I haven't been able to get the URL to redirect properly, so that's what I need to fix.
-2020/08/23, 03:25 - V: Furthermore, I'm having troubles connecting to the server, so I'll email Shun to ask for help.
+2020/08/23, 03:26 - V: Furthermore, I'm having troubles connecting to the server, so I'll email Shun to ask for help.
 
 Tried both methods described in the SDP notes Rylan was referring to, as well as the VPN method
 2020/08/23, 08:40 - +27 71 417 4762: Did you finish with Java script
@@ -1074,3 +1074,89 @@ The recommended time*
 2020/09/28, 12:57 - V: 👌🏽
 2020/09/28, 14:39 - +27 71 417 4762: Meeting in 5 minutes
 2020/09/28, 16:11 - V: @27631149177 can you git pull, login into our site, and then enter your student number and password when prompted, it's not working for Pfunzo, so I want to see if it'll work for you.
+2020/09/29, 11:39 - +27 71 417 4762: how much coveralls is needed
+2020/09/29, 11:40 - +27 71 417 4762: <Media omitted>
+2020/09/29, 14:09 - +27 71 417 4762: Who's coming to the meeting
+2020/09/29, 14:23 - V: I will attend, just finishing up.
+2020/09/29, 14:35 - +27 62 193 1440: I am also available
+2020/09/29, 14:56 - +27 62 193 1440: My network is giving me problems, apologies
+2020/09/29, 16:21 - +27 63 114 9177: Meeting Minutes: Improve unit Testing of each functionality by using local test cases 
+
+Improve overall user interface
+
+Include Respond and Request processes in Diagrams
+
+Include end state in state diagram
+
+Complete all code required to trace Use case Diagram to actual implemented  code
+
+Add tasks done in Taiga Taskboard
+
+Be ready for Sprint review  before final Presentation
+2020/10/06, 21:19 - V: Greetings, apologies for the lack of communication, I've had other academic obligations, I imagine you lot have as well.
+
+In any case, we do need to find a time when we can discuss what has to be done for the final marking.
+2020/10/07, 21:24 - +27 71 417 4762: Greetings, I think we should do it on Friday
+2020/10/07, 21:24 - +27 71 417 4762: I'll be focusing on testing I think we really need to do well
+2020/10/07, 21:40 - V: I'm good with Friday as well, anybody else who can make it on Friday?
+2020/10/09, 07:46 - +27 71 417 4762: This message was deleted
+2020/10/09, 07:47 - +27 71 417 4762: Greetings between and 10 and 12 what are you guys comfortable with
+2020/10/09, 11:24 - V: Unfortunately I just woke up.
+2020/10/09, 11:51 - V: In any case I've been trying to get the username and password from the login, but I've spent nearly a day unable to find a way how to.
+2020/10/09, 11:52 - V: The methods I've tried return the password encrypted.
+2020/10/09, 14:37 - V: @Ntokozo to get the classes that are present in the project, you can run "python manage.py inspectdb" it will return a list of all the models in the database, my suggestion is wait a day or two, because I'm working on the database, before doing that.
+2020/10/09, 14:42 - +27 63 114 9177: Okay the final presentation is on the 13th.
+2020/10/09, 14:43 - V: Yes, that's why I want to do the database asap so that you can complete your tasks
+2020/10/09, 14:49 - V: Sprint review and retrospective on the 12th, when is everyone available?
+2020/10/09, 14:49 - V: The retrospective will be before the review so I need two time suggestions.
+2020/10/09, 15:01 - V: Sprint 4 user stories all have tasks, 3 are closed.
+2020/10/10, 17:12 - V: ???
+2020/10/10, 17:14 - +27 71 417 4762: I'm available
+2020/10/10, 17:15 - +27 71 417 4762: Anytime
+2020/10/10, 17:15 - +27 71 417 4762: Monday morning
+2020/10/10, 17:16 - +27 71 417 4762: Tomorrow I'll be available after 1
+2020/10/10, 17:25 - V: Alright, any other time suggestions?
+2020/10/10, 18:43 - +27 62 193 1440: I am available tomorrow and Monday as well and anything that needs to be done I am all ears and will start working in it tomorrow
+2020/10/10, 19:05 - V: Alright I'll email Rylan.
+2020/10/10, 19:06 - V: We need a lot more test cases, so if you can do that it would be helpful.
+2020/10/11, 05:44 - V: @27631149177 I don't know if you had started, however you can use the classes that show up in the code.
+I won't be making any changes to the database structure.
+2020/10/11, 21:46 - V: Just an update, I emailed Rylan this morning, he still hasn't gotten back to me, but we need to have a retrospective meeting tomorrow, morning, so is 10AM alright?
+2020/10/11, 21:51 - +27 71 417 4762: We all have to be there
+2020/10/11, 21:52 - +27 71 417 4762: Let's show up in numbers
+2020/10/12, 07:57 - +27 71 417 4762: Did he respond?
+2020/10/12, 07:58 - +27 71 417 4762: I just wanna make sure of the time I have some driving lessons around 11
+2020/10/12, 08:42 - V: No he has not responded.
+2020/10/12, 10:00 - V: To join the video meeting, click this link: 
+https://meet.google.com/tap-ioon-ctc 
+ 
+To join by phone instead, dial (US) +1 601-732-5387 and enter this PIN: 761 780 831#
+2020/10/12, 10:00 - V: Sprint retrospective is on now
+2020/10/12, 10:03 - V: Just a reminder this is the meeting where we discuss what we struggled with and all, not the Sprint review, Rylan is yet to reply to my email about a sprint review.
+2020/10/12, 10:12 - V: <Media omitted>
+2020/10/12, 10:13 - V: In any case given we were unable to have majority attendance, the retrospective has been postponed to a later time today, so I need at least two people to let me know when they're available.
+2020/10/12, 10:14 - V: With regards to the one with Rylan I'll let you know if I hear from him.
+2020/10/12, 10:40 - +27 71 417 4762: @27631149177 what time are you comfortable with?
+2020/10/12, 10:40 - +27 71 417 4762: I think he's really needed
+2020/10/12, 10:40 - +27 71 417 4762: I'll make it whatever time 😅
+2020/10/12, 10:55 - V: I'll wait to hear from him.
+2020/10/12, 12:56 - +27 63 114 9177: I am available, I thought we had to have a meeting with Rylan on Tuesday.
+2020/10/12, 13:05 - V: On Tuesday we're getting marked, we need to have a review meeting with him before that.
+2020/10/12, 13:06 - V: @27631149177 @27621931440 @27714174762 what time would you prefer to have the retrospective
+2020/10/12, 13:06 - V: Rylan can do a review today at 3, so I suggest we have our retrospective at 2.
+2020/10/12, 13:07 - +27 62 193 1440: I am good with 2
+2020/10/12, 13:09 - +27 63 114 9177: I'm available.
+2020/10/12, 13:09 - V: I emailed all of you two invites, one for the retrospective, and one for the review
+2020/10/12, 14:04 - V: To join the video meeting, click this link: 
+https://meet.google.com/xts-nesn-gih 
+ 
+To join by phone instead, dial (US) +1 774-255-3243 and enter this PIN: 443 439 526#
+2020/10/12, 14:04 - V: Retrospective is on now.
+2020/10/12, 14:04 - V: Review in an hours time
+2020/10/12, 22:19 - V: For those who don't visit Moodle that often, peer assessment is up on Moodle, due date is 23 October.
+2020/10/13, 00:50 - V: We probably won't have tests for the web scraping, still nowhere near being done with the frontend login problem
+2020/10/13, 00:53 - +27 62 193 1440: I added test cases but I can't get the website to run, it gives me a 404 error so I am reluctant to push to github, but from checking them on the terminal they pass
+2020/10/13, 00:55 - +27 71 417 4762: Send the file here and I'll check it
+2020/10/13, 06:09 - +27 62 193 1440: I sent you an email and shared the changes on google drive
+2020/10/13, 07:03 - +27 71 417 4762: Did you write any new test??
+2020/10/13, 07:08 - +27 62 193 1440: Yes if you check the test folders you will find files that test the views, models, URLs  etc
