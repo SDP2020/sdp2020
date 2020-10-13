@@ -22,7 +22,7 @@
     script: # => 7
  
       - python manage.py test
-      - coverage run --source=users,blog manage.py test
+      - coverage run --source=users,admin,blog manage.py test
     after_success: 
      - coveralls
 
