@@ -1,236 +1,97 @@
+
 {% extends "blog/base.html" %}
 {% load static %}
 
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<style>
-	body {font-family: Arial, Helvetica, sans-serif;}
-	
-	/* Full-width input fields */
-	input[type=text], input[type=password] {
-	  width: 100%;
-	  padding: 12px 20px;
-	  margin: 8px 0;
-	  display: inline-block;
-	  border: 1px solid #ccc;
-	  box-sizing: border-box;
-	}
-	
-	/* Set a style for all buttons */
-	button {
-	  background-color: #4CAF50;
-	  color: white;
-	  padding: 14px 20px;
-	  margin: 8px 0;
-	  border: none;
-	  cursor: pointer;
-	  width: 100%;
-	}
-	
-	button:hover {
-	  opacity: 0.8;
-	}
-	
-	/* Extra styles for the cancel button */
-	.cancelbtn {
-	  width: auto;
-	  padding: 10px 18px;
-	  background-color: #f44336;
-	}
-	
-	/* Center the image and position the close button */
-	.imgcontainer {
-	  text-align: center;
-	  margin: 24px 0 12px 0;
-	  position: relative;
-	}
-	
-	.container {
-	  padding: 16px;
-	}
-	
-	span.psw {
-	  float: right;
-	  padding-top: 16px;
-	}
-	
-	/* The Modal (background) */
-	.modal {
-	  display: none; /* Hidden by default */
-	  position: fixed; /* Stay in place */
-	  z-index: 1; /* Sit on top */
-	  left: 0;
-	  top: 0;
-	  width: 100%; /* Full width */
-	  height: 100%; /* Full height */
-	  overflow: auto; /* Enable scroll if needed */
-	  background-color: rgb(0,0,0); /* Fallback color */
-	  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-	  padding-top: 60px;
-	}
-	
-	/* Modal Content/Box */
-	.modal-content {
-	  background-color: #fefefe;
-	  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
-	  border: 1px solid #888;
-	  width: 80%; /* Could be more or less, depending on screen size */
-	}
-	
-	/* The Close Button (x) */
-	.close {
-	  position: absolute;
-	  right: 25px;
-	  top: 0;
-	  color: #000;
-	  font-size: 35px;
-	  font-weight: bold;
-	}
-	
-	.close:hover,
-	.close:focus {
-	  color: red;
-	  cursor: pointer;
-	}
-	
-	/* Add Zoom Animation */
-	.animate {
-	  -webkit-animation: animatezoom 0.6s;
-	  animation: animatezoom 0.6s
-	}
-	
-	@-webkit-keyframes animatezoom {
-	  from {-webkit-transform: scale(0)} 
-	  to {-webkit-transform: scale(1)}
-	}
-	  
-	@keyframes animatezoom {
-	  from {transform: scale(0)} 
-	  to {transform: scale(1)}
-	}
-	
-	/* Change styles for span and cancel button on extra small screens */
-	@media screen and (max-width: 300px) {
-	  span.psw {
-		 display: block;
-		 float: none;
-	  }
-	  .cancelbtn {
-		 width: 100%;
-	  }
-	}
-	body {font-family: Arial, Helvetica, sans-serif;}
-
-	/* The Modal (background) */
-	
-
-	/* Add Animation */
-	@-webkit-keyframes animatetop {
-	from {top:-300px; opacity:0} 
-	to {top:0; opacity:1}
-	}
-
-	@keyframes animatetop {
-	from {top:-300px; opacity:0}
-	to {top:0; opacity:1}
-	}
-
-	/* The Close Button */
-	.close {
-	color: white;
-	float: right;
-	font-size: 28px;
-	font-weight: bold;
-	}
-
-	.modal-header {
-	padding: 2px 16px;
-	background-color: #5cb85c;
-	color: white;
-	}
-
-	.modal-body {padding: 2px 16px;}
-
-	.modal-footer {
-	padding: 2px 16px;
-	background-color: #5cb85c;
-	color: white;
-	}
-</style>
 
 
 
 {% block content %}
 	{% if user.is_authenticated %}
 
-
-
-
-
-	
-
-	
-	
-	
-	<script>
-	// Get the modal
-	var modal = document.getElementById('id01');
-	
-	// When the user clicks anywhere outside of the modal, close it
-	window.onclick = function(event) {
-		if (event.target == modal) {
-			modal.style.display = "none";
-		}
-	}
-	</script>
-
-
 		<link rel="stylesheet" href="{% static 'jqtree.css'%}">
 		<script type="text/javascript" src="{% static 'js/tree.jquery.js' %}"></script>
 
 		<p id="paragraph">Click to the button below in order to access your wits courses</p>
-		<button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
+		<button id="Update_resourcses" style="width:auto;">Update resources</button>
 		<div id="tree1"></div>
-		<div id="myModal" class="modal">
-
-			<!-- Modal content -->
-			<div class="modal-content">
-			  <div class="modal-header">
-				<span class="close">&times;</span>
-				<h2 id="modal_heading"></h2>
-			  </div>
-			  <div class="modal-body" id="modal_body_div">
-				  <p id="modal_body_text"> Your course resources will be displayed here</p>
-			  </div>
-			  <div class="modal-footer">
-				<h3 id="modal_footer"></h3>
-			  </div>
-			</div>
-		  
-		  </div>
-		  <div id="id01" class="modal">
-	  
-			<form class="modal-content animate" onsubmit="onSubmit()" id="passwordForm">
-			  <div class="imgcontainer">
-				<span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
-				</div>
-		  
-			  <div class="container">
-				
-				<label for="psw"><b>Password</b></label>
-				<input type="password" placeholder="Enter Password" name="psw" required>
-				  
-				<button type="submit">Get Courses</button>
-			  </div>
-		  
-			  <div class="container" style="background-color:#f1f1f1">
-				<button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
-			  </div>
-			</form>
-		  </div>
+		<div id="tree2"></div>
 		<script>
+
+			
+			document.getElementById("Update_resourcses").onclick = function() {onSubmit()};
+			onStartUp();
+			function onStartUp(){
+				document.getElementById("paragraph").innerHTML = "Click the button below to update your courses"
+				try{
+					$(document).ready(function () {
+						$.ajax({
+							url: 'ajax/courses',
+							data: {
+								'state': "local",
+							},
+							dataType: "json",
+							success: function(courses){
+								console.log(courses);
+								var data = []
+								var resources_ = [];
+								var count = 0;
+								var $tree = $('#tree2');
+								for (var course in courses){
+									if (courses[course] === "course"){
+										console.log(course);
+										console.log(count > 0);
+										if (count > 0){
+											data.push({
+												name: name,
+												children: resources_
+											});
+										}
+										resources_ = [];
+										name = course;
+									}
+									else{
+										resources_.push(course);
+									}
+									count++;
+									// console.log(count);
+								}
+								$(function() {
+									$tree.tree({
+											data: data
+										});
+									});
+									$tree.on( 'tree.click', function(e){
+										e.preventDefault();
+										var selected_node = e.node;
+										console.log(String(selected_node.name))
+										console.log(selected_node)
+										if (String(selected_node.parent) !== ""){
+										console.log("goodness grace we finally found you");
+										var file_name = String(selected_node.parent.name) + "/" + String(selected_node.name);
+						
+										String(file_name).replace(" ", "%");
+										console.log(file_name)
+										window.location.replace("/blog/about/download?state=download&file_name=" + file_name);
+								
+						
+											console.log(String(selected_node.parent.name) + "/" + String(selected_node.name));
+										} 
+									})
+
+							}
+						});
+					});
+				}
+				catch (TypeError) {
+					console.log("ran into an error");
+				}
+			}
+			// onSubmit(); // TODO testing
 			function onSubmit(){
 				console.log("Aqui estamos");
-				var password = document.getElementById("passwordForm").psw.value;
+				var password = prompt();
+				document.getElementById("paragraph").innerText = "Please wait while we fetch your courses, this may take a while";
 				console.log("password", password);
 				try {
 					$(document).ready(function () {
@@ -241,27 +102,40 @@
 							},
 							dataType: "json",
 							success: function(courses){
-								console.log(courses);
+								document.getElementById("paragraph").innerText = "Your courses are displayed below";
+				
+								var data = [];
+								var resources_ = []
+								var name;
 								var $tree = $('#tree1');
-								var data = []
+								var count = 0;
+								console.log(courses);
 								for (var course in courses){
-									console.log(course)
-									console.log(typeof(course))
-									data.push({
-										name: course,
-										children: [
-											{name:"lecturer: n/a"},
-											{name:"textbook: n/a"},
-											{name:"resources",
-											children: courses[course]}
-										]
-									})
+									if (courses[course] === "course"){
+										console.log(course);
+										console.log(count > 0);
+										if (count > 0){
+											data.push({
+												name: name,
+												children: resources_
+											});
+										}
+										resources_ = [];
+										name = course;
+									}
+									else{
+										resources_.push(course);
+									}
+									count++;
+									// console.log(count);
 								}
+								
 								$(function() {
 									$tree.tree({
 											data: data
 										});
 									});
+									
 									$tree.on( 'tree.click', function(e){
 										e.preventDefault();
 										var selected_node = e.node;
@@ -278,13 +152,13 @@
 											var heading_text = document.getElementById("modal_heading");
 											heading_text.innerText = selected_node.parent.name;
 											
-											// var modal_body =- document.getElementById("modal_body_text")
-											// modal_body.innerHTML = "Hello world"
-											modal.style.display = "block";
 											
+											modal.style.display = "block";
+											var modal_body = document.getElementById("modal_body_div");
+											modal_body.innerHTML = selected_node.course;
 											// When the user clicks on <span> (x), close the modal
 											span.onclick = function() {
-											modal.style.display = "none";
+												modal.style.display = "none";
 											}
 
 											// When the user clicks anywhere outside of the modal, close it
@@ -295,7 +169,7 @@
 											}
 										} 
 									})
-
+								
 							}
 						});
 					});
