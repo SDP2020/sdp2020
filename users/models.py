@@ -40,11 +40,9 @@ class Course(models.Model):
 #     instance.student.save() # if you run into problem's try changing profile to student
 
 class Student(models.Model):
-    user = models.OneToOneField(User, on_delete=models.CASCADE)
     bio = models.TextField(max_length=500, blank=True)
     location = models.CharField(max_length=30, blank=True)
-    courses = models.ManyToManyField(Course)
-    password = models.CharField(max_length=256, default="password") # TODO this is just for testing purposes
+    courses = models.TextField(max_length=500000, blank=True)
     student_number = models.IntegerField(max_length=8, primary_key=True)
 
 # @receiver(post_save, sender=User)
